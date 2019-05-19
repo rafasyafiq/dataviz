@@ -56,13 +56,13 @@ Bahasa R memiliki berbagai sistem untuk membuat grafik, contohnya base, lattice,
 Anda harus mengaktifkan paket terlebih dahulu untuk dapat menggunakan fungsi-fungsi yang terdapat dalam paket tersebut. Cara mengaktifkan paket adalah dengan cara menjalankan `library(nama_paket)` atau `library("nama_paket")` pada *chunk* R Markdown, R Script, atau konsol RStudio jika Anda bekerja di sesi interaktif. Ingat bahwa paket harus selalu diaktifkan sebelum memulai sesi analisis! Sekarang aktifkanlah paket ggplot2 dengan cara mengganti bagian ___ dengan jawaban yang tepat!
 
 ```{r load-package}
-library(___)
+library(ggplot2)
 ```
 
 Anda dapat menggunakan fungsi `qplot()` untuk membuat grafik menggunakan ggplot2. Silakan jalankan `help(qplot)` atau `?qplot` pada konsol RStudio untuk membuka laman dokumentasi fungsi `qplot()`. Dalam contoh ini Anda akan membuat grafik dari dataset diamonds yang tersedia dalam paket ggplot2. Anda dapat melihat isi serta dokumentasi dari dataset tersebut dengan menjalankan `diamonds` dan `?diamonds`  di konsol RStudio. Setelah Anda membaca dokumentasi fungsi `qplot()` dan dataset diamonds tersebut, isilah bagian ___ pada *chunk* berikut untuk membuat grafik hubungan antara berat (sumbu x), harga (sumbu y) dan kejernihan intan dari dataset diamonds. 
 
 ```{r plot-diamonds1}
-qplot(x = ___, y = ___, colour = clarity, data = ___)
+qplot(x = carat, y = price, colour = clarity, data = diamonds)
 ```
 
 Selamat Anda telah berhasil membuat grafik pertama menggunakan ggplot2! Selain meggunakan fungsi `qplot()` Anda juga dapat menggunakan fungsi `ggplot()` untuk membuat grafik. Berikut merupakan kode R untuk membuat grafik dari dataset diamonds yang persis sama dengan grafik pada *chunk* sebelumnya:
